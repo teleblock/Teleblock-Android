@@ -1,0 +1,32 @@
+{
+  "platform": "2",
+  "host": "https://api.teleblock.io",
+  "time": 1660270112,
+  "tester": "14843839150",
+  "testerphones": [
+    "14843839150",
+    "886910710479",
+    "8617715889519",
+    "8613121199507",
+    "8615801589518"
+  ],
+  "translate": {
+    "bing": false,
+    "name": "microsoft",
+    "api": "https://api.cognitive.microsofttranslator.com/translate",
+    "key": "9cb62773f9de4ea9a79f5a1e1c9f3e5b",
+    "region": "japaneast"
+  },
+  "channel_post": false,
+  "openseaapikey": "77cea869aea04b2494e2b90050ecb15e",
+  "language": [
+    {
+      "key": "english",
+      "value": 1
+    },
+    {
+      "key": "中文",
+      "value": 2
+    }
+  ]
+}

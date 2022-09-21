@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ruffian.library.widget.RLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:background_normal="@color/white"
+    app:corner_radius_top_left="30dp"
+    app:corner_radius_top_right="30dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/bg_user_personal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.ruffian.library.widget.RFrameLayout
+            android:layout_width="92dp"
+            android:layout_height="92dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="24dp"
+            android:padding="4dp"
+            app:border_color_normal="@color/white"
+            app:border_width_normal="4dp"
+            app:corner_radius="46dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <FrameLayout
+                android:id="@+id/fl_avatar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.ruffian.library.widget.RFrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="136dp"
+            android:layout_marginTop="83dp"
+            android:includeFontPadding="false"
+            android:text="#專職韭菜 #ETH"
+            android:textColor="#56565C"
+            android:textSize="13sp"
+            android:visibility="invisible"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.ruffian.library.widget.RTextView
+            android:id="@+id/tv_close_dialog"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="15dp"
+            app:background_normal="#4DFFFFFF"
+            app:corner_radius="20dp"
+            app:icon_src_normal="@drawable/icon_close_tg_rpofile_bg"
+            app:icon_with_text="true"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.ruffian.library.widget.RLinearLayout
+            android:id="@+id/ll_username"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="136dp"
+            android:layout_marginTop="83dp"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="6dp"
+            android:visibility="invisible"
+            app:background_normal="#F0F5FF"
+            app:corner_radius="15dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/icon_id_group_profile" />
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:includeFontPadding="false"
+                android:textColor="#1A1A1D"
+                android:textSize="14sp"
+                tools:text="\@yifan1011" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/icon_arrow_tg_profile_id" />
+        </com.ruffian.library.widget.RLinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <teleblock.widget.font.MediumTextView
+        android:id="@+id/tv_full_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="12dp"
+        android:textColor="#1A1A1D"
+        android:textSize="20sp"
+        tools:text="Yifan | Teleblocker" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="30dp">
+
+        <LinearLayout
+            android:id="@+id/ll_profile_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toLeftOf="parent">
+
+            <com.ruffian.library.widget.RTextView
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                app:background_normal="#F0F0F0"
+                app:corner_radius="23dp"
+                app:icon_src_normal="@drawable/icon_message_tg_profile"
+                app:icon_with_text="true" />
+
+            <TextView
+                android:id="@+id/tv_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:includeFontPadding="false"
+                android:textColor="#868686"
+                android:textSize="13sp"
+                tools:text="@string/user_personal_message" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_profile_voice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toRightOf="@id/ll_profile_message"
+            app:layout_constraintRight_toLeftOf="@id/ll_profile_secret">
+
+            <com.ruffian.library.widget.RTextView
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                app:background_normal="#F0F0F0"
+                app:corner_radius="23dp"
+                app:icon_src_normal="@drawable/icon_voice_tg_profile"
+                app:icon_with_text="true" />
+
+            <TextView
+                android:id="@+id/tv_voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:includeFontPadding="false"
+                android:textColor="#868686"
+                android:textSize="13sp"
+                tools:text="@string/user_personal_voice" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_profile_secret"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toRightOf="@id/ll_profile_voice"
+            app:layout_constraintRight_toLeftOf="@id/ll_profile_add_friend">
+
+            <com.ruffian.library.widget.RTextView
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                app:background_normal="#F0F0F0"
+                app:corner_radius="23dp"
+                app:icon_src_normal="@drawable/icon_private_tg_profile"
+                app:icon_with_text="true" />
+
+            <TextView
+                android:id="@+id/tv_commune"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:includeFontPadding="false"
+                android:textColor="#868686"
+                android:textSize="13sp"
+                tools:text="@string/user_personal_secret_chat" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_profile_add_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintLeft_toRightOf="@id/ll_profile_secret"
+            app:layout_constraintRight_toLeftOf="@id/ll_profile_main_page">
+
+            <com.ruffian.library.widget.RTextView
+                android:id="@+id/iv_add_friend"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                app:background_normal="#F0F0F0"
+                app:corner_radius="23dp"
+                app:icon_src_normal="@drawable/icon_add_friend_tg_profile"
+                app:icon_src_selected="@drawable/icon_nickname_tg_profile"
+                app:icon_with_text="true" />
+
+            <TextView
+                android:id="@+id/tv_add_friend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:includeFontPadding="false"
+                android:textColor="#868686"
+                android:textSize="13sp"
+                tools:text="@string/user_personal_add_friend" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_profile_main_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <com.ruffian.library.widget.RTextView
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                app:background_normal="#F0F0F0"
+                app:corner_radius="23dp"
+                app:icon_src_normal="@drawable/icon_main_page_tg_profile"
+                app:icon_with_text="true" />
+
+            <TextView
+                android:id="@+id/tv_main_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:includeFontPadding="false"
+                android:textColor="#868686"
+                android:textSize="13sp"
+                tools:text="@string/user_personal_main_page" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.ruffian.library.widget.RTextView
+        android:id="@+id/tv_user_search"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:textColor="@color/theme_color"
+        android:textSize="14sp"
+        app:background_normal="#F0F5FF"
+        app:corner_radius="8dp"
+        tools:text="在本群組共發送了12则讯息 >" />
+
+    <TextView
+        android:id="@+id/tv_last_msg_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:textColor="#868686"
+        android:textSize="10sp"
+        tools:text="@string/user_personal_last_msg_date" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="13dp"
+        android:background="#E6E6E6" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_profile_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:paddingTop="4dp">
+
+                    <TextView
+                        android:id="@+id/tv_introduction"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="#868686"
+                        android:textSize="13sp"
+                        tools:text="@string/user_personal_introduction" />
+
+                    <TextView
+                        android:id="@+id/tv_profile_expand"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="6dp"
+                        android:textColor="#868686"
+                        android:textSize="13sp"
+                        android:visibility="invisible"
+                        tools:text="@string/fg_textview_expand" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/fl_profile_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#E6E6E6" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_online_time_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:includeFontPadding="false"
+                android:textColor="#868686"
+                android:textSize="13sp"
+                tools:text="@string/user_personal_online_time" />
+
+            <TextView
+                android:id="@+id/tv_online_time_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:includeFontPadding="false"
+                android:textColor="#1A1A1D"
+                android:textSize="14sp"
+                tools:text="2020/11/11 23:59" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="12dp"
+                android:background="#E6E6E6" />
+
+            <TextView
+                android:id="@+id/tv_common_chats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:includeFontPadding="false"
+                android:textColor="#868686"
+                android:textSize="13sp"
+                tools:text="@string/user_personal_common_group" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp"
+                android:fadingEdge="none"
+                android:overScrollMode="never" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</com.ruffian.library.widget.RLinearLayout>

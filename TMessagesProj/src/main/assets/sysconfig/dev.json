@@ -1,0 +1,29 @@
+{
+  "platform": "1",
+  "host": "http://localhost",
+  "time": 1660270112,
+  "tester": "8617715889519",
+  "testerphones": [
+    "8617715889519",
+    "8618662430879"
+  ],
+  "translate": {
+    "bing": false,
+    "name": "microsoft",
+    "api": "https://api.cognitive.microsofttranslator.com/translate",
+    "key": "9cb62773f9de4ea9a79f5a1e1c9f3e5b",
+    "region": "japaneast"
+  },
+  "channel_post": false,
+  "openseaapikey": "77cea869aea04b2494e2b90050ecb15e",
+  "language": [
+    {
+      "key": "english",
+      "value": 1
+    },
+    {
+      "key": "中文",
+      "value": 2
+    }
+  ]
+}

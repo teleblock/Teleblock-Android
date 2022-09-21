@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "103012854534",
+    "project_id": "teleblock-cd200",
+    "storage_bucket": "teleblock-cd200.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:103012806505:android:2fd8df298a504c99ed57f8",
+        "android_client_info": {
+          "package_name": "app.teleblock.io"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "103012806505-0uk8e1h4d5f5jpl9l46ckqc4escca89v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCq-e1o_P93OdkmYZv-3-mUbvF2eNQkirw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "103012806505-0uk8e1h4d5f5jpl9l46ckqc4escca89v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:103012806505:android:2fd8df298a504c99ed57f8",
+        "android_client_info": {
+          "package_name": "app.teleblock.io.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "103012806505-0uk8e1h4d5f5jpl9l46ckqc4escca89v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCq-e1o_P93OdkmYZv-3-mUbvF2eNQkirw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "103012806505-0uk8e1h4d5f5jpl9l46ckqc4escca89v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Teleblock</string>
+    <string name="app_name_beta">Teleblock Dev</string>
+    <string name="title_telegram">Teleblock</string>
+    <string name="ac_intro_btn_text">Open Teleblock</string>
+    <string name="view_contact_about_us">About Teleblock</string>
+</resources>

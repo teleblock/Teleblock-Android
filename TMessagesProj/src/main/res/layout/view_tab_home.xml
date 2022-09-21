@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="10dp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.33dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_1f000000" />
+
+    <com.ruffian.library.widget.RLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="11dp"
+        android:layout_marginTop="13dp"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="21dp"
+        android:paddingVertical="13dp"
+        android:visibility="gone"
+        app:background_normal="#F7F8F9"
+        app:corner_radius="10dp">
+
+        <TextView
+            android:id="@+id/tv_wallet_tips"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/home_unbind_wallet_tips"
+            android:textColor="#56565C"
+            android:textSize="13sp" />
+
+        <com.ruffian.library.widget.RTextView
+            android:id="@+id/tv_link_wallet"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:paddingHorizontal="15dp"
+            android:text="@string/home_link_wallet"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            app:background_normal="@color/theme_color"
+            app:corner_radius="17dp" />
+    </com.ruffian.library.widget.RLinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp">
+
+            <com.ruffian.library.widget.RView
+                android:id="@+id/v_home_contact"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="16dp"
+                app:background_normal="@drawable/btn_friends_index_normal"
+                app:background_pressed="@drawable/btn_friends_index_press"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_home_contact"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                tools:text="@string/home_contact"
+                android:textColor="#56565C"
+                android:textSize="13sp"
+                app:layout_constraintLeft_toLeftOf="@id/v_home_contact"
+                app:layout_constraintRight_toRightOf="@id/v_home_contact"
+                app:layout_constraintTop_toBottomOf="@id/v_home_contact" />
+
+            <com.ruffian.library.widget.RTextView
+                android:id="@+id/tv_contact_unread"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:minWidth="20dp"
+                android:includeFontPadding="false"
+                android:paddingHorizontal="6dp"
+                android:textSize="13sp"
+                android:visibility="gone"
+                app:background_normal="@color/color_FF5F5F"
+                app:corner_radius="10dp"
+                app:layout_constraintLeft_toRightOf="@id/v_home_contact"
+                app:layout_constraintRight_toRightOf="@id/v_home_contact"
+                app:text_color_normal="@color/white"
+                tools:text="99" />
+
+            <com.ruffian.library.widget.RView
+                android:id="@+id/v_home_related_me"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_marginLeft="28dp"
+                app:background_normal="@drawable/btn_at_me_index_normal"
+                app:background_pressed="@drawable/btn_at_me_index_press"
+                app:layout_constraintLeft_toRightOf="@id/v_home_contact" />
+
+            <TextView
+                android:id="@+id/tv_home_related_me"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                tools:text="@string/home_relatedme"
+                android:textColor="#56565C"
+                android:textSize="13sp"
+                app:layout_constraintLeft_toLeftOf="@id/v_home_related_me"
+                app:layout_constraintRight_toRightOf="@id/v_home_related_me"
+                app:layout_constraintTop_toBottomOf="@id/v_home_related_me" />
+
+            <com.ruffian.library.widget.RTextView
+                android:id="@+id/tv_related_me_unread"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:minWidth="20dp"
+                android:includeFontPadding="false"
+                android:paddingHorizontal="6dp"
+                android:textSize="13sp"
+                android:visibility="gone"
+                app:background_normal="@color/color_FF5F5F"
+                app:corner_radius="10dp"
+                app:layout_constraintLeft_toRightOf="@id/v_home_related_me"
+                app:layout_constraintRight_toRightOf="@id/v_home_related_me"
+                app:text_color_normal="@color/white"
+                tools:text="99" />
+
+            <com.ruffian.library.widget.RView
+                android:id="@+id/v_home_non_contact"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_marginLeft="28dp"
+                app:background_normal="@drawable/btn_non_contact_index_normal"
+                app:background_pressed="@drawable/btn_non_contact_index_press"
+                app:layout_constraintLeft_toRightOf="@id/v_home_related_me" />
+
+            <TextView
+                android:id="@+id/tv_home_non_contact"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                tools:text="@string/home_unknown_sender"
+                android:textColor="#56565C"
+                android:textSize="13sp"
+                app:layout_constraintLeft_toLeftOf="@id/v_home_non_contact"
+                app:layout_constraintRight_toRightOf="@id/v_home_non_contact"
+                app:layout_constraintTop_toBottomOf="@id/v_home_non_contact" />
+
+            <com.ruffian.library.widget.RTextView
+                android:id="@+id/tv_non_contact_unread"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:paddingHorizontal="6dp"
+                android:textSize="13sp"
+                android:minWidth="20dp"
+                android:visibility="gone"
+                app:background_normal="@color/color_FF5F5F"
+                app:corner_radius="10dp"
+                app:layout_constraintLeft_toRightOf="@id/v_home_non_contact"
+                app:layout_constraintRight_toRightOf="@id/v_home_non_contact"
+                app:text_color_normal="@color/white"
+                tools:text="99" />
+
+            <com.ruffian.library.widget.RView
+                android:id="@+id/v_home_tool"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_marginLeft="28dp"
+                app:background_normal="@drawable/btn_good_tools_index_normal"
+                app:background_pressed="@drawable/btn_good_tools_index_press"
+                app:layout_constraintLeft_toRightOf="@id/v_home_non_contact" />
+
+            <TextView
+                android:id="@+id/tv_home_tool"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                tools:text="@string/home_commontools"
+                android:textColor="#56565C"
+                android:textSize="13sp"
+                app:layout_constraintLeft_toLeftOf="@id/v_home_tool"
+                app:layout_constraintRight_toRightOf="@id/v_home_tool"
+                app:layout_constraintTop_toBottomOf="@id/v_home_tool" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </HorizontalScrollView>
+
+    <teleblock.widget.NoPaddingTextView
+        android:id="@+id/tv_home_tab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="26dp"
+        tools:text="@string/home_msg_group"
+        android:textColor="#DE000000"
+        android:textSize="15sp" />
+</LinearLayout>

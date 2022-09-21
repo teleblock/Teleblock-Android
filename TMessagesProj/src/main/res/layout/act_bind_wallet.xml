@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.ruffian.library.widget.RView
+        android:id="@+id/v_top_bg"
+        app:gradient_orientation="TL_BR"
+        app:layout_constraintTop_toTopOf="parent"
+        app:background_normal="@array/gradient_bind_wallet_bg"
+        android:layout_width="match_parent"
+        android:layout_height="316dp"/>
+
+    <com.ruffian.library.widget.RView
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="250dp"
+        app:corner_radius_top_left="20dp"
+        app:corner_radius_top_right="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:background_normal="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <ImageView
+        android:id="@+id/iv_top_img"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/image_connect_wallet_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/iv_top_img"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/act_bindwallet_linkwallet"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_title_tips"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/act_bindwallet_select_linkwallet"
+        android:textColor="#868686"
+        android:textSize="13sp" />
+
+    <com.ruffian.library.widget.RTextView
+        android:id="@+id/tv_wallet_meta_mask"
+        android:layout_marginTop="27dp"
+        app:corner_radius="56dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:icon_width_left="32dp"
+        app:icon_height_left="32dp"
+        android:paddingStart="12dp"
+        android:text="MetaMask"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:drawablePadding="12dp"
+        app:icon_normal_left="@drawable/logo_meta_mask_connect_wallet"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_tips"
+        app:background_normal="@color/color_F7F8F9"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"/>
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="@string/act_bindwallet_cancel"
+        android:paddingTop="10dp"
+        android:layout_marginBottom="40dp"
+        android:paddingBottom="10dp"
+        android:textColor="#ff868686"
+        android:textSize="16sp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

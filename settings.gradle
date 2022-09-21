@@ -1,0 +1,10 @@
+include ':TMessagesProj'
+
+dependencyResolutionManagement {
+    repositories {
+        // JitPack 远程仓库：https://jitpack.io
+        maven { url 'https://jitpack.io' }
+    }
+}
+include ':blurkit'
+include ':wallet-connect'
